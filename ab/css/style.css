@@ -1,0 +1,498 @@
+a,p{font-family: 'Raleway', sans-serif;}
+/*a{font-family: 'Open Sans', sans-serif;
+font-family: 'Jockey One', sans-serif;}메인용*/
+h2{font-family: 'Anton', sans-serif;}
+/*body{overflow: hidden;} 을 먹이면 스크롤이 없어진다
+*/
+wrap{width: 100%;}
+main{width: 100%;}
+body{
+position: relative;
+height: 100%;
+}
+#main{
+position: absolute;
+width: 100%;}
+.logo a{font-family: 'Jockey One', sans-serif;
+font-weight: 600;
+font-size: 2rem;
+letter-spacing: 0px;
+position: absolute;
+color: #fff;
+margin: 10px 0 0 15px;
+}
+#logo-logo{
+background-color: #2ad354;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+input[id="lang"]+ label:hover{color: #28b94d;transform: scale(0.9);}
+.SE{position: absolute;}
+.EN{display: none;}
+input[id="lang"]{
+    display: none;
+}
+input[id="lang"]+label{
+    display: block;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+    height: 30px;
+    right: 70px;
+    top: 12px;
+    font-size: 17px;
+}
+input[id="lang"]+ label +p{
+transition: all .35s;
+}
+
+
+
+input[id="mbtn"]{
+    display: none;
+}
+input[id="mbtn"]+label{
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    width: 25px;
+    height: 30px;
+    right: 16px;  
+    top:8px;
+     z-index: 100;
+}
+input[id="mbtn"]+label span{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 40px;
+    background: #fff;
+    transition: all .35s;
+    z-index: 10;
+   cursor: pointer;
+    display: block;
+  
+}
+input[id="mbtn"]+label span:nth-child(1){
+    top: 30%;
+    display: block;
+    
+}
+input[id="mbtn"]+label span:nth-child(2){
+    bottom: 30%;
+    
+}
+input[id="mbtn"]:checked +label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    
+}
+input[id="mbtn"]:checked +label span:nth-child(2){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  
+}
+
+div[id="rside_cover"]{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width:100%;
+    top:0;
+    visibility: hidden;
+    display: block;
+    
+}
+
+
+
+#rside ul{margin: 45px 0 0 35px;
+    
+}
+#rside a{display: block;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.3rem;
+padding-bottom: 22px}
+
+#lside{position: fixed;
+background: #003223;
+color: #fff;
+top: 0;
+bottom: 0;
+width: 200px;
+right: -250px;
+z-index: 1000;
+right: 0;}
+#lside ul{margin: 45px 0 0 35px;}
+#lside a{display: block;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.3rem;
+padding-bottom: 22px;}
+input[id="mbtn"]:checked+label+div{
+    visibility: visible;
+    z-index:10;
+}
+input[id="lang"]:checked + label + div{
+    z-index: 14;
+    visibility: visible;
+}
+div[id="lside_cover"]{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width:100%;
+    top:0;
+    visibility: hidden;
+    display: block;
+    
+}
+
+
+
+.mainimg{background: url(../img/absolut-home.jpg) fixed no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 940px;
+}
+.logocover{height: 550px;
+width: 550px;
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+}
+.mainlogo{background: url(../img/absolut-home-logo.png) no-repeat center;
+    background-size: 90% 90%;
+height: 100%;
+width: 100%;
+}
+
+#contentwrap{position: relative;
+top: 940px;
+background-color: #cee8d5;
+text-align: center;
+padding: 5% 0;
+}
+
+section .text-title{
+}
+.bold{color: #ba42f2;
+font-size: 3.8rem;
+    padding-bottom: 25px;
+}
+.text-title p{
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    letter-spacing: 1.9px;
+}
+.text-title a{color: #ba42f2;}
+
+.btn-menu{height: 50px; width: 150px;
+background: #2ad354;
+    transition: 0.3s;
+    margin-top:20px;
+    
+}
+.btn-menu a{color: #fff;
+font-weight: 600;
+letter-spacing: 1.5px;
+display: block;
+}
+.btn-menu:hover{background: #037c15; opacity: 0.6;}
+
+
+
+/*메뉴2*/
+#item{width: 100%;
+    margin: 0 auto;
+      display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.EXPERIENCE-wrap{background: url(../img/Experience.png) center;
+height: 500px;
+width: 30%;
+    position: relative;
+    margin-right: 30px;
+}
+.EXPERIENCE-wrap span{display: block;
+border-top: 1px solid;
+top: 365px;
+    width:50%;
+    position: relative;
+    padding: 35px 0;
+    margin: 0 auto;
+color: #fff;}
+
+
+/*------*/
+
+
+.EXPERIENCE-wrap h3{font-family: 'Open Sans', sans-serif;
+color: #fff;
+font-weight: 200;
+font-size: 1.6rem;
+position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.EXPERIENCE-wrap p{color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+}
+/*칵테일*/
+.COCKTAIL-wrap{background: url(../img/Cocktail-Masterclass-41.jpg);
+background-position: 20% 80%;
+height: 500px;
+width: 30%;
+    position: relative;
+    margin-right: 30px;
+  
+}
+.COCKTAIL-wrap span{display: block;
+border-top: 1px solid;
+top: 365px;
+    width:50%;
+    position: relative;
+    padding: 35px 0;
+    margin: 0 auto;
+color: #fff;}
+/*------*/
+
+
+.COCKTAIL-wrap h3{font-family: 'Open Sans', sans-serif;
+color: #fff;
+    width: 100%;
+font-weight: 200;
+font-size: 1.6rem;
+position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);}
+.COCKTAIL-wrap p{color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;}
+
+.RESTAURANT-wrap{background: url(../img/Restaurant_villan.jpg)no-repeat;
+background-position: 50% 60%;
+height: 500px;
+width: 30%;
+    position: relative;
+}
+.RESTAURANT-wrap span{display: block;
+border-top: 1px solid;
+top: 365px;
+    width:50%;
+    position: relative;
+    padding: 35px 0;
+    margin: 0 auto;
+color: #fff;}
+/*------*/
+.RESTAURANT-wrap h3{font-family: 'Open Sans', sans-serif;
+color: #fff;
+font-weight: 200;
+font-size: 1.6rem;
+position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);}
+.RESTAURANT-wrap p{color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;}
+
+
+#text-center{position: relative;
+top:900px;background: url(../img/THEMUSTSEE.jpg)fixed no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 440px;}
+.center h2{font-family: 'Jockey One', sans-serif;
+color: #fff;
+    width: 100%;
+font-weight: 900;
+font-size: 7rem;
+position: absolute;
+    text-align: center;
+    top: 20%;
+line-height: 80px}
+.btn-menu02{height: 50px; width: 150px;
+background: #2ad354;
+    transition: 0.3s;
+    position: absolute;
+   left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px
+    
+}
+.btn-menu02 a{color: #fff;
+font-weight: 600;
+letter-spacing: 1.5px;
+display: block;
+}
+.btn-menu02:hover{ opacity: 0.8;
+filter: grayscale(0.1);}
+
+
+footer{position: relative;
+top: 900px;
+background: #003223;}
+.ticket-fix{background: #2ad354;width: 100%;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+    line-height: 50px;
+    letter-spacing: 1px;
+    z-index: 99;
+}
+.innerfooter{
+height: 340px;
+    display: flex;
+    justify-content: center;
+}
+.flogo img{width: 250px; 
+    margin: 50px 0 50px;
+    
+}
+.footer-01{color: #fff;font-size: 1.2rem;
+letter-spacing: 1.5px;
+line-height: 25px;
+padding-left: 5%;
+padding-right: 5%;}
+.footer-01 p{margin: 50px 0 50px;
+}
+.footer-01 p>a{font-weight: 800;text-decoration: underline;
+}
+.footer-02{color: #fff;font-size: 1.2rem;
+letter-spacing: 1.5px;
+line-height: 17px;
+height: 300px;width: ;}
+.footer-02 p{margin: 50px 0 50px;
+
+}
+.footer-02 p>a{font-weight: 800;text-decoration: underline;
+    color: #2ad354; display: block;
+    line-height: 0px
+}
+
+.footer-snscover{width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    
+}
+.face{background: url(../img/facebook_icon.png);
+    background-size: 40px;
+width: 40px;height: 40px;
+font-size: 0;
+float: left;
+}
+.insta{background: url(../img/insta_icon.png);
+    background-size: 40px;
+height: 40px;width: 40px;font-size: 0;
+float: right;
+    display: block;
+}
+
+
+@media screen and (max-width: 639px){
+    .logocover{height: 50%;
+width: 80%;
+       position: relative;
+    margin: 0 auto;
+    top: 100px;
+} 
+    .mainlogo{
+        
+        height: 100%;
+        width: 100%;
+        
+    }
+.center h2{font-size: 4rem;
+    line-height: 50px}
+}
+
+@media screen and (max-width: 1200px){
+    .innerfooter p{
+        font-size: 1.1rem;
+    }
+    #item>div span{
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 780px){
+     #item{
+        display:block;
+    }
+   
+
+     #item>div{
+        margin:16px auto;
+        width: 80%;
+        
+    }
+    #item>div span{
+        width: 70%;
+    }
+    footer{position: relative;
+    height: 750px;
+    }
+    .innerfooter p{
+        font-size: 1.3rem;
+    }
+    .flogo{position: absolute;
+    float: left;}
+    .footer-01{position: absolute;
+    float: right;
+    top: 170px;
+    text-align: center;
+    padding: 0;
+    letter-spacing: 0;}
+    .footer-02{position: absolute;
+    float: left;
+    top: 400px;
+    text-align: center;}
+    .footer-snscover{
+    padding-top: 620px; 
+    }
+    
+}
+
+
+#rside{
+    position:absolute;
+    right:0;
+    height:100%;
+    background-color:#003223;
+    width: 250px;
+}
+
