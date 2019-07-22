@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    font-size: 12px;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    vertical-align: bottom;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+}
+address{
+    font-style: normal;
+}
+        #wrap{
+    width: 100%;
+min-width: 1000px;}
+.section{
+    width: 1000px;
+    margin: auto;}
+    main{
+    
+    height: 499px;
+    color: #fff;
+    position: relative;
+}
+
+
+#bg img{
+    height: 499px;
+    position: absolute;
+    display: inline-block;
+}
+
+main .textcover{
+    padding-top: 5rem;
+    position: relative;
+}
+main .textcover h3{
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+main .textcover h2{
+    font-size: 3.5rem;
+    line-height: 1;
+    margin: 1rem 0 4rem;
+}
+main .textcover p{
+    font-size: 1.2rem;
+}
+main .textcover a{
+    display: inline-block;
+    border: 1px solid #fff;
+    
+    font-size: 1.3rem;
+    line-height: 40px;
+    width: 200px;
+    text-align: center;
+    margin-top: 3rem;
+}
+main .textcover span{
+    margin-left: 20px;
+}
+main .textcover a:hover{
+    background-color: #fff;
+    color: #666;
+    transition: 0.3s
+}
+
+#slidernav{background: rgba(0, 0, 0, 0.83);
+position: absolute;
+width: 100%;
+bottom: 0;}
+#slidernav ul{
+ overflow: hidden;   
+border-right: 1px solid #666;
+width: 100%;}
+#slidernav li{
+    float: left;
+width: 200px;
+text-align: center;
+border-left: 1px solid #999;
+box-sizing: border-box;
+}
+#slidernav a{
+    display: block;
+    line-height: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}</style>
+</head>
+<body>
+    
+     <main>
+            <div id="bg">
+               <img id="pro" src="ktnexr-img/02_slider/slideBg1.jpg" alt="">
+               <img id="con" src="ktnexr-img/02_slider/slideBg2.jpg" alt="">
+               <img id="V" src="ktnexr-img/02_slider/3V.jpg" alt="">
+               <img id="suc" src="ktnexr-img/02_slider/slideBg3.jpg" alt="">
+               <img id="who" src="ktnexr-img/02_slider/slideBg4.jpg" alt="">
+            </div>
+            <div class="section">
+                <div class="textcover">
+                    <h3>비즈니스 통찰력을 넘어 성과도출에 기여</h3>
+                    <h2>
+                        Big Data for<br> 
+                        Business Action
+                    </h2>
+                    <p>
+                빅데이터는 비즈니스 통찰력을 넘어 비용감소,<br>
+                매출증대를 위한 의사결정을 할 수 있어야 합니다.
+                    </p>
+                    <a href="#">READ MORE <span> > </span></a>
+                </div>
+            </div>
+            <div id="slidernav">
+                <div class="section">
+                    <ul>
+                        <li id="btn1"><a href="">Product</a></li>
+                        <li id="btn2"><a href="">Consulting</a></li>
+                        <li id="btn3"><a href="">3V</a></li>
+                        <li id="btn4"><a href="">Success</a></li>
+                        <li id="btn5"><a href="">Who We Are</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+<script>
+    var btn1=document.getElementById('btn1');
+var btn2=document.getElementById('btn2');
+var btn3=document.getElementById('btn3');
+var btn4=document.getElementById('btn4');
+var btn5=document.getElementById('btn5');
+
+var pro=document.getElementById('pro');
+var con=document.getElementById('con');
+var V=document.getElementById('V');
+var suc=document.getElementById('suc');
+var who=document.getElementById('who');
+
+
+
+    function imgview(){
+        pro.style.display="none";
+        con.style.display="none";
+        V.style.display="none";
+        suc.style.display="none";
+        who.style.display="none";
+        
+        if(count==1){
+          pro.style.display="block";
+        } else if (count==2) {
+          con.style.display="block";
+        } else if (count==3) {
+          V.style.display="block";
+        } else if (count==4) {
+          suc.style.display="block";
+        } else if (count==5) {
+          who.style.display="block";
+        }
+        }
+    btn1.addEventListener('click', function(){
+          count=1;
+          imgview();
+        })
+    btn2.addEventListener('click', function(){
+          count=2;
+          imgview();
+        })
+    btn3.addEventListener('click', function(){
+          count=3;
+          imgview();
+        })
+    btn4.addEventListener('click', function(){
+          count=4;
+          imgview();
+        })
+    btn5.addEventListener('click', function(){
+          count=5;
+          imgview();
+        })
+    </script>
+</body>
+</html>
